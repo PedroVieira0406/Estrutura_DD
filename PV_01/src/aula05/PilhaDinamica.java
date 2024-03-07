@@ -1,12 +1,12 @@
 package aula05;
 
-public class PilhaDinamica {
-	private No topo;
+public class PilhaDinamica <T>{
+	private No <T> topo;
 	public PilhaDinamica() {
 		this.topo = null;
 	}
 	
-	public void push(int elemento) {
+	public void push(T elemento) {
 		No noAux = new No(elemento);
 		noAux.setProximo(this.topo);
 		this.topo =noAux;
