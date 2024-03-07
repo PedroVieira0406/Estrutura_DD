@@ -8,7 +8,7 @@ public class FilaDinamica {
 		this.base= null;
 		this.ult=null;
 	}
-	public void push(int elemento) {
+	public void push(T elemento) {
 		No noAux = new No(elemento);
 		if(base==null) {
 			this.base=noAux;
