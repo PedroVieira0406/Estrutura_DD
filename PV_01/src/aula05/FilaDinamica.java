@@ -1,8 +1,8 @@
 package aula05;
 
 public class FilaDinamica <T> {
-	private No base;
-	private No ult;
+	private No <T> base;
+	private No <T> ult;
 	
 	public FilaDinamica(){
 		this.base= null;
