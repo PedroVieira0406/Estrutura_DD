@@ -1,6 +1,6 @@
 package aula05;
 
-public class No <T> {
+public class No <T>{
 	private T elemento;
 	private No <T> proximo;
 	
@@ -17,12 +17,13 @@ public class No <T> {
 		this.elemento = elemento;
 	}
 
-	public No getProximo() {
+	public No<T> getProximo() {
 		return proximo;
 	}
 
-	public void setProximo(No proximo) {
+	public void setProximo(No <T> proximo) {
 		this.proximo = proximo;
 	}
 	
 }
+
