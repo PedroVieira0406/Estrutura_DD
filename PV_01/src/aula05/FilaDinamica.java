@@ -1,6 +1,6 @@
 package aula05;
 
-public class FilaDinamica {
+public class FilaDinamica <T> {
 	private No base;
 	private No ult;
 	
