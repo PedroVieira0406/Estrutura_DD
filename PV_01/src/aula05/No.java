@@ -1,19 +1,19 @@
 package aula05;
 
-public class No {
-	private int elemento;
-	private No proximo;
+public class No <T> {
+	private T elemento;
+	private No <T> proximo;
 	
-	public No(int valor) {
+	public No(T valor) {
 		this.elemento = valor;
 		this.proximo = null;
 	}
 
-	public int getElemento() {
+	public T getElemento() {
 		return elemento;
 	}
 
-	public void setElemento(int elemento) {
+	public void setElemento(T elemento) {
 		this.elemento = elemento;
 	}
 
