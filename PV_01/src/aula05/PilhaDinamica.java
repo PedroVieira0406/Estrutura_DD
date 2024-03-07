@@ -7,18 +7,18 @@ public class PilhaDinamica <T>{
 	}
 	
 	public void push(T elemento) {
-		No noAux = new No(elemento);
+		No <T> noAux = new No<T>(elemento);
 		noAux.setProximo(this.topo);
 		this.topo =noAux;
 	}
 	public void pop() {
-		No noAux = this.topo;
+		No <T> noAux = this.topo;
 		this.topo= noAux.getProximo();
 		noAux.setProximo(null);
 		
 	}
 	public void imprimir() {
-		No noAux = this.topo;
+		No <T> noAux = this.topo;
 		while(noAux.getProximo()!=null) {
 			System.out.println(noAux.getElemento());
 			noAux=noAux.getProximo();
